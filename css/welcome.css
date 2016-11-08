@@ -1,4 +1,26 @@
+body, html{
+    height: 100%;
+}
+
 #logo{
     color: #1b6d85;
     font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+#divider1{
+    margin-top: 0px;
+}
+
+li{
+    font-family: 'Cinzel', serif;
+}
+
+footer{
+
 }
