@@ -16,26 +16,36 @@
             height: 100%;
             margin: 0;
 
-        }
-       .bgimg-1, .bgimg-2, .bgimg-3{
-           position: relative;
 
-           background-attachment: fixed;
-           background-position: center;
-           background-repeat: no-repeat;
-           background-size: cover;
-       }
-        .bgimg-1{
-            background-image: url("http://lorempixel.com/1024/800/abstract");
+        }
+
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            position: relative;
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+            /*background-size: cover;*/
+        }
+
+        .bgimg-1 {
+            background-image: url(images/reworkSplashScreen.jpg);
             min-height: 100%;
+
+
         }
-        .bgimg-2{
-            background-image: url("http://lorempixel.com/1024/800/city");
+
+        .bgimg-2 {
+            background-image: url(images/coding.jpg);
             min-height: 400px;
+
         }
-        .bgimg-3{
-            background-image: url("http://lorempixel.com/1024/800/transport");
+
+        .bgimg-3 {
+            background-image: url("http://lorempixel.com/g/1024/800/transport");
             min-height: 400px;
+
         }
 
         .caption {
@@ -44,96 +54,111 @@
             top: 50%;
             width: 100%;
             text-align: center;
-            color: #000;
+
 
         }
 
         .caption span.border {
             /*background-color: #111;*/
-            color: #fff;
+            color: white;
             padding: 18px;
-            font-size: 25px;
             /*letter-spacing: 10px;*/
             font-family: 'Cinzel', serif;
-            font-size: 2.5em;
+            font-size: 2.7em;
 
         }
-        #aboutMe {
+
+        .infoBar {
             margin: 5% auto;
 
         }
+        .contactMe{
+            margin: 5% auto;
+        }
 
-        footer{
+        textarea{
+            resize: none;
+        }
+
+        footer {
             min-height: 100px;
             background-color: #000;
         }
 
-        #copyright{
+        #copyright {
             float: right;
-            margin-top: 1.75%;
+            margin-top: 1.5%;
         }
 
         /*=========================
   Icons
  ================= */
 
-       /*  footer social icons */
+        /*  footer social icons */
         ul.social-network {
             list-style: none;
             display: inline;
-            margin-left:0 !important;
+            margin-left: 0 !important;
             padding: 0;
         }
+
         ul.social-network li {
             display: inline;
             margin: 0;
 
         }
 
-
         /* footer social icons */
         .social-network a.icoRss:hover {
             background-color: #F56505;
         }
+
         .social-network a.icoFacebook:hover {
-            background-color:#3B5998;
+            background-color: #3B5998;
         }
+
         .social-network a.icoTwitter:hover {
-            background-color:#33ccff;
+            background-color: #33ccff;
         }
+
         .social-network a.icoGoogle:hover {
-            background-color:#BD3518;
+            background-color: #BD3518;
         }
+
         .social-network a.icoVimeo:hover {
-            background-color:#0590B8;
+            background-color: #0590B8;
         }
+
         .social-network a.icoLinkedin:hover {
-            background-color:#007bb7;
+            background-color: #007bb7;
         }
+
         .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
         .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
-            color:#fff;
+            color: #fff;
         }
+
         a.socialIcon:hover, .socialHoverClass {
-            color:#44BCDD;
+            color: #44BCDD;
         }
 
         .social-circle li a {
-            display:inline-block;
-            position:relative;
-            margin:0 auto 0 auto;
-            -moz-border-radius:50%;
-            -webkit-border-radius:50%;
-            border-radius:50%;
-            text-align:center;
+            display: inline-block;
+            position: relative;
+            margin: 0 auto 0 auto;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
             width: 40px;
             height: 40px;
-            font-size:20px;
+            font-size: 20px;
 
         }
+
         .social-circle li i {
-            margin:0;
-            line-height:50px;
+            margin: 0;
+            line-height: 50px;
             text-align: center;
         }
 
@@ -148,6 +173,7 @@
             -ms-transition: all 0.2s;
             transition: all 0.2s;
         }
+
         .social-circle i {
             color: #fff;
             -webkit-transition: all 0.8s;
@@ -157,12 +183,14 @@
             transition: all 0.8s;
         }
 
-       /* a {
-            background-color: #D3D3D3;
-        }*/
+        /* a {
+             background-color: #D3D3D3;
+         }*/
     </style>
 </head>
 <body>
+
+<!-- Splash Screen -->
 
     <div class="bgimg-1">
         <div class="caption">
@@ -170,49 +198,114 @@
         </div>
     </div>
 
-    <div class="container" >
-        <p> If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.
-            We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically.
-            The dreams of yesterday are the hopes of today and the reality of tomorrow.
-            Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?</p>
+<!-- About me -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12, infoBar">
+                <p> If you could see the earth illuminated when you were in a place as dark as night, it would look to you more
+                splendid than the moon.
+                We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe
+                atomically.
+                The dreams of yesterday are the hopes of today and the reality of tomorrow.
+                Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest
+                mountain?</p>
+            </div>
+        </div>
     </div>
+
+<!--Projects and Experience -->
 
     <div class="bgimg-2">
         <div class="caption">
             <span class="border">Projects & Experience</span>
         </div>
     </div>
+
     <div class="container">
-        <p>If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.
-        We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically.
-        The dreams of yesterday are the hopes of today and the reality of tomorrow.
-        Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="infoBar">
+                    <p> If you could see the earth illuminated when you were in a place as dark as night, it would look to you more
+                        splendid than the moon.
+                        We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe
+                        atomically.
+                        The dreams of yesterday are the hopes of today and the reality of tomorrow.
+                        Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest
+                        mountain?</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="infoBar">
+                    <ul>
+                        <li>HTML 5</li>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        <li>CSS 3</li>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        <li>Javascript</li>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+
+<!-- Contact Me -->
+
     <div class="bgimg-3">
         <div class="caption">
             <span class="border">Contact Me</span>
         </div>
     </div>
+
     <div class="container">
-        <p> If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.
-        We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically.
-        The dreams of yesterday are the hopes of today and the reality of tomorrow.
-        Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?</p>
-    </div>
-<footer class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <ul class="social-network social-circle">
-                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-            <p id="copyright">&copy; 2016 Anthony J. Fortney</p>
+        <div class="row" >
+            <div class="col-md-12, contactMe">
+                <form>
+                    <div class="form-group">
+                        <label for="emailInput">Your Email Address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput">Say Hello!</label>
+                        <textarea class="form-control" id="messageInput" placeholder="Your Message" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-default">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</footer>
+
+<!-- Footer -->
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="social-network social-circle">
+                   <!-- <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li> -->
+                    <li><a href="https://www.facebook.com/anthony.fortney.50" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                   <!-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
+                    <li><a href="https://plus.google.com/u/0/117742487753484067950" class="icoGoogle" title="Google +" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/anthony-fortney-b56a40131" class="icoLinkedin" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                <p id="copyright">&copy; 2016 Anthony J. Fortney</p>
+            </div>
+        </div>
+    </footer>
 
 
 <script src="js/bootstrap.min.js"></script>
